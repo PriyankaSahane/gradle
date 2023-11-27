@@ -1,0 +1,22 @@
+plugins {
+    id 'war'
+    id 'org.gretty' version '4.0.0'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'jakarta.servlet:jakarta.servlet-api:6.0.0'
+    implementation 'spring:spring-web:1.0.2'
+    implementation 'org.springframework.boot:spring-boot-starter-tomcat:3.1.2'
+    implementation 'org.springframework.boot:spring-boot-starter-test:3.1.2'
+}
+
+test {
+    useJUnitPlatform()
+}
